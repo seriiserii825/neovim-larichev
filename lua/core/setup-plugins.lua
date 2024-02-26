@@ -53,6 +53,8 @@ require("lazy").setup({
 		end,
 	},
 	{ "dcampos/cmp-emmet-vim" },
-	{ "SirVer/ultisnips" },
+	{ "hrsh7th/vim-vsnip" },
+	{ "hrsh7th/vim-vsnip-integ" },
+	-- { "SirVer/ultisnips" },
 	{ "honza/vim-snippets" },
 })

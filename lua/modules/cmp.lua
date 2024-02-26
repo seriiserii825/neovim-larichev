@@ -4,10 +4,10 @@ cmp.setup({
 	snippet = {
 		-- REQUIRED - you must specify a snippet engine
 		expand = function(args)
-			-- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
+			vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
 			-- require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
 			-- require('snippy').expand_snippet(args.body) -- For `snippy` users.
-			vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
+			-- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
 		end,
 	},
 	window = {
@@ -23,6 +23,8 @@ cmp.setup({
 		["<Tab>"] = cmp.mapping(function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item()
+			elseif vim.fn["vsnip#available"]() == 1 then
+				vim.fn.feedkeys(vim.api.nvim_replace_termcodes("<Plug>(vsnip-expand-or-jump)", true, true, true), "")
 			else
 				fallback()
 			end
@@ -37,7 +39,7 @@ cmp.setup({
 	}),
 	sources = cmp.config.sources({
 		{ name = "nvim_lsp" },
-		-- { name = "vsnip" }, -- For vsnip users.
+		{ name = "vsnip" }, -- For vsnip users.
 		{ name = "emmet_vim" },
 	}, { { name = "buffer" }, { name = "nvim_lsp_signature_help" } }),
 })

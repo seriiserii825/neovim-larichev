@@ -1,4 +1,4 @@
--- vim.g["UltiSnipsSnippetDirectories"] = { "~/.config/nvim/snippets" }
+vim.g["UltiSnipsSnippetDirectories"] = { "~/.config/nvim/snippets" }
 
 vim.g["UltiSnipsExpandTrigger"] = "<Tab>"
 vim.g["UltiSnipsJumpForwardTrigger"] = "<tab>"
