@@ -37,5 +37,8 @@ require("lazy").setup({
 {'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'},
     {'hrsh7th/cmp-cmdline'}, {'hrsh7th/nvim-cmp'},
     {'numToStr/Comment.nvim'},
- {"folke/which-key.nvim"}
+ {"folke/which-key.nvim"},
+{"williamboman/mason.nvim"},
+{"linrongbin16/lsp-progress.nvim"},
+{'nvim-lualine/lualine.nvim'}
 })
