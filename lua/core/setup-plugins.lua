@@ -13,21 +13,18 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	"phaazon/hop.nvim",
-	{
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-			"MunifTanjim/nui.nvim",
-			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-		}
-	},
+    {'justinmk/vim-sneak'},
+    {'tpope/vim-surround'},
+    {'numToStr/Comment.nvim'},
+    {'windwp/nvim-autopairs'},
+    {'tpope/vim-fugitive'},
+    {'kyazdani42/nvim-web-devicons'},
+   {'nvim-tree/nvim-tree.lua'},
 	{'nvim-treesitter/nvim-treesitter'},
 	{'neovim/nvim-lspconfig'},
 	{'joshdick/onedark.vim'},
 	{'rebelot/kanagawa.nvim'},
-  {
+    {
         'nvim-telescope/telescope.nvim',
         dependencies = {'nvim-lua/plenary.nvim'}
     }, 
