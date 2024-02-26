@@ -27,4 +27,8 @@ require("lazy").setup({
 	{'neovim/nvim-lspconfig'},
 	{'joshdick/onedark.vim'},
 	{'rebelot/kanagawa.nvim'},
+  {
+        'nvim-telescope/telescope.nvim',
+        dependencies = {'nvim-lua/plenary.nvim'}
+    }, 
 })
