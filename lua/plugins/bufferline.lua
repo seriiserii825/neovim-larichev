@@ -18,8 +18,10 @@ require("bufferline").setup {
         -- separator_style = "slope"
     }
 }
-vim.keymap.set("n", "<leader>q", ":bp<bar>sp<bar>bn<bar>bd<CR>")
-vim.keymap.set("n", "<leader>a", ":w <bar> %bd <bar> e# <bar> bd# <CR>")
+vim.keymap.set('n', '<leader>w', ':w<CR>')
+vim.keymap.set('n', '<leader>bq', ':BufferLinePickClose<CR>')
+vim.keymap.set('n', '<leader>br', ':BufferLineCloseRight<CR>')
+vim.keymap.set("n", "<leader>bo", ":BufferLineCloseOthers<CR>")
 vim.keymap.set("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>")
 vim.keymap.set("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>")
 vim.keymap.set("n", "<S-A-h>", "<cmd>BufferLineMovePrev<cr>")
