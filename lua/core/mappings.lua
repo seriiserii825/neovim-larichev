@@ -6,7 +6,7 @@ vim.keymap.set('n', '<leader>e', ':NvimTreeFindFile<CR>')
 vim.keymap.set("i", "jj", "<ESC>")
 
 -- Reset highlight
-vim.keymap.set("n", "<leader>nh", "nohl<CR>")
+vim.keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- Use alt + hjkl to resize windows
 vim.keymap.set("n", "<C-Down>", ":resize -2<CR>")

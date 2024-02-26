@@ -16,7 +16,11 @@ require("lazy").setup({
     {'justinmk/vim-sneak'},
     {'tpope/vim-surround'},
     {'numToStr/Comment.nvim'},
-    {'windwp/nvim-autopairs'},
+    {'windwp/nvim-autopairs',
+  event = "InsertEnter",
+    config = true
+},
+{'windwp/nvim-ts-autotag'},
     {'tpope/vim-fugitive'},
     {'kyazdani42/nvim-web-devicons'},
    {'nvim-tree/nvim-tree.lua'},
@@ -30,4 +34,5 @@ require("lazy").setup({
     }, 
     {'akinsho/bufferline.nvim'},
 {'akinsho/toggleterm.nvim', version = "*", config = true},
+
 })
