@@ -1,4 +1,8 @@
-require("toggleterm").setup {open_mapping = [[<C-t>]]}
+require("toggleterm").setup {open_mapping = [[<C-\>]]}
+-- Terminal
+vim.keymap.set('n', '<leader>tf', ':ToggleTerm direction=float<CR>')
+vim.keymap.set('n', '<leader>th', ':ToggleTerm direction=horizontal<CR>')
+vim.keymap.set('n', '<leader>tv', ':ToggleTerm direction=vertical size=40<CR>')
 
 function _G.set_terminal_keymaps()
     local opts = {buffer = 0}
