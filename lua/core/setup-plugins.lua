@@ -28,5 +28,6 @@ require("lazy").setup({
         'nvim-telescope/telescope.nvim',
         dependencies = {'nvim-lua/plenary.nvim'}
     }, 
-    {'akinsho/bufferline.nvim'}
+    {'akinsho/bufferline.nvim'},
+{'akinsho/toggleterm.nvim', version = "*", config = true},
 })
