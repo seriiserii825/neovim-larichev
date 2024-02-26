@@ -42,4 +42,17 @@ require("lazy").setup({
 	{ "linrongbin16/lsp-progress.nvim" },
 	{ "nvim-lualine/lualine.nvim" },
 	{ "jose-elias-alvarez/null-ls.nvim" },
+	{
+		"mattn/emmet-vim",
+		setup = function() -- load stuff before the plugin is loaded
+			vim.g.user_emmet_leader_key = "<C-m>"
+
+			vim.g.user_emmet_settings = {
+				indent_blockelement = 1,
+			}
+		end,
+	},
+	{ "dcampos/cmp-emmet-vim" },
+	{ "SirVer/ultisnips" },
+	{ "honza/vim-snippets" },
 })
