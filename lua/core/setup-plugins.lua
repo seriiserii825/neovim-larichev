@@ -39,8 +39,8 @@ require("lazy").setup({
 	{ "numToStr/Comment.nvim" },
 	{ "folke/which-key.nvim" },
 	{ "williamboman/mason.nvim" },
-    {"williamboman/mason-lspconfig.nvim"},
-    {"jay-babu/mason-null-ls.nvim"},
+	{ "williamboman/mason-lspconfig.nvim" },
+	{ "jay-babu/mason-null-ls.nvim" },
 	{ "linrongbin16/lsp-progress.nvim" },
 	{ "nvim-lualine/lualine.nvim" },
 	{ "jose-elias-alvarez/null-ls.nvim" },
@@ -62,4 +62,5 @@ require("lazy").setup({
 	-- { "quangnguyen30192/cmp-nvim-ultisnips" },
 	{ "dcampos/cmp-snippy" },
 	{ "dcampos/nvim-snippy" },
+	{ "mg979/vim-visual-multi" },
 })
