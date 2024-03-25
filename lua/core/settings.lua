@@ -15,6 +15,13 @@ vim.opt.virtualedit = "block"
 vim.opt.undofile = true
 vim.opt.shell = "/bin/zsh"
 
+vim.opt.foldmethod = "indent"
+vim.opt.foldnestmax = 20
+vim.opt.foldlevelstart = 99
+vim.opt.foldlevel = 99
+vim.opt.swapfile = false
+vim.opt.undofile = true
+
 -- Mouse
 vim.opt.mouse = "a"
 vim.opt.mousefocus = true
