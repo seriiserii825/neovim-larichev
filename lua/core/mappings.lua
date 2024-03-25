@@ -4,6 +4,11 @@ vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappin
 -- use jk to exit insert mode
 vim.keymap.set("i", "jj", "<ESC>")
 
+-- nnoremap <expr> <leader>fw ':Files <cr>' . "'" . expand('<cword>')
+
+-- vim.keymap.set("<leader>fw", "':Files <cr>' . "'" . expand('<cword>')", "<ESC>")
+
+
 -- Reset highlight
 vim.keymap.set("n", "<leader>nh", ":nohl<CR>")
 

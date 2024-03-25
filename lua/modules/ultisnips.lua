@@ -1,4 +1,4 @@
-require("cmp_nvim_ultisnips").setup({})
+-- require("cmp_nvim_ultisnips").setup({})
 vim.g["UltiSnipsSnippetsDir"] = "~/.config/nvim/snippets"
 vim.g["UltiSnipsSnippetDirectories"] = { "~/.config/nvim/snippets" }
 
