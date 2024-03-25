@@ -4,6 +4,7 @@ require("core.colors")
 require("core.settings")
 
 -- Plugins
+require("modules.flash")
 require("modules.lsp")
 require("modules.nvim-tree")
 require("modules.treesitter")
