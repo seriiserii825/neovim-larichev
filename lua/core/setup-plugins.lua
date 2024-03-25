@@ -13,9 +13,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
 	"phaazon/hop.nvim",
-	{ "justinmk/vim-sneak" },
+	-- { "justinmk/vim-sneak" },
 	{ "tpope/vim-surround" },
-	{ "numToStr/Comment.nvim" },
+	{ "tomtom/tcomment_vim" },
 	{ "windwp/nvim-autopairs", event = "InsertEnter", config = true },
 	{ "windwp/nvim-ts-autotag" },
 	{ "tpope/vim-fugitive" },
@@ -25,6 +25,7 @@ require("lazy").setup({
 	{ "neovim/nvim-lspconfig" },
 	{ "joshdick/onedark.vim" },
 	{ "rebelot/kanagawa.nvim" },
+	{ "folke/flash.nvim" },
 	{
 		"nvim-telescope/telescope.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
@@ -36,7 +37,6 @@ require("lazy").setup({
 	{ "hrsh7th/cmp-path" },
 	{ "hrsh7th/cmp-cmdline" },
 	{ "hrsh7th/nvim-cmp" },
-	{ "numToStr/Comment.nvim" },
 	{ "folke/which-key.nvim" },
 	{ "williamboman/mason.nvim" },
 	{ "williamboman/mason-lspconfig.nvim" },

@@ -1,6 +1,5 @@
 -- Example using a list of specs with the default options
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
-vim.keymap.set('n', '<leader>e', ':NvimTreeFindFile<CR>')
 
 -- use jk to exit insert mode
 vim.keymap.set("i", "jj", "<ESC>")

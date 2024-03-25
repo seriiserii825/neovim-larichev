@@ -48,3 +48,6 @@ require("nvim-tree").setup({
 	},
 	on_attach = my_on_attach,
 })
+
+vim.keymap.set("n", "<leader>e", ":NvimTreeFindFile<CR>")
+vim.keymap.set("n", "<leader>nc", ":NvimTreeToggle<CR>")
