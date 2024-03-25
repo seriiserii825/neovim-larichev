@@ -8,6 +8,9 @@ vim.keymap.set("i", "jj", "<ESC>")
 
 -- vim.keymap.set("<leader>fw", "':Files <cr>' . "'" . expand('<cword>')", "<ESC>")
 
+-- write to lua
+vim.keymap.set("n", "<leader>sn", ":source ~/.config/nvim/init.vim<CR>")
+vim.keymap.set("n", "<leader>sf", ":source %<CR>")
 
 -- Reset highlight
 vim.keymap.set("n", "<leader>nh", ":nohl<CR>")
