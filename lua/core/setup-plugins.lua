@@ -22,7 +22,6 @@ require("lazy").setup({
 	{ "kyazdani42/nvim-web-devicons" },
 	{ "nvim-tree/nvim-tree.lua" },
 	{ "nvim-treesitter/nvim-treesitter" },
-	{ "neovim/nvim-lspconfig" },
 	{ "joshdick/onedark.vim" },
 	{ "rebelot/kanagawa.nvim" },
 	{ "folke/flash.nvim" },
@@ -33,6 +32,7 @@ require("lazy").setup({
 	{ "akinsho/bufferline.nvim" },
 	{ "akinsho/toggleterm.nvim", version = "*", config = true },
 	-- cmp
+	{ "neovim/nvim-lspconfig" },
 	{ "hrsh7th/cmp-nvim-lsp" },
 	{ "hrsh7th/cmp-buffer" },
 	{ "hrsh7th/cmp-path" },
