@@ -25,6 +25,7 @@ require("lazy").setup({
 	{ "joshdick/onedark.vim" },
 	{ "rebelot/kanagawa.nvim" },
 	{ "folke/flash.nvim" },
+	{ "github/copilot.vim" },
 	{
 		"nvim-telescope/telescope.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
